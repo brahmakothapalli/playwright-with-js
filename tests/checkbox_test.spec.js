@@ -1,7 +1,7 @@
 const{test, firefox} = require('@playwright/test')
 
 test('check or uncheck checkboxes', async()=>{
-    const browser = await firefox.launch({headless: false})
+    const browser = await firefox.launch({headless: true})
     const page = await browser.newPage()
     await page.goto('https://the-internet.herokuapp.com/checkboxes')
     await page.waitForTimeout(5000)
