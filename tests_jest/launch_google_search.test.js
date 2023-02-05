@@ -7,7 +7,7 @@ describe('UI Tests', ()=>{
     let context = null
 
     beforeAll(async ()=>{
-        browser = await chromium.launch({headless: false})
+        browser = await chromium.launch()
         context = await browser.newContext()
         page = await context.newPage()
         await page.goto('https://playwright.dev/')

@@ -1,7 +1,7 @@
 const{test, expect, chromium} = require('@playwright/test')
 
 test('enter login details test', async()=>{
-    const browser = await chromium.launch({headless:true})
+    const browser = await chromium.launch()
     const page = await browser.newPage()
     await page.goto('https://www.saucedemo.com/')
     console.log(await page.title())

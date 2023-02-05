@@ -1,7 +1,7 @@
 const{test, expect, chromium} = require('@playwright/test')
 
 test('select value from dropdow', async()=>{
-    const browser = await chromium.launch({headless:false})
+    const browser = await chromium.launch()
     const page = await browser.newPage()
     await page.goto('https://www.saucedemo.com/')
     const user_id = await page.$('#user-name')

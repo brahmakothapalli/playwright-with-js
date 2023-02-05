@@ -1,7 +1,7 @@
 const {test, expect, chromium} = require('@playwright/test')
 
 test('launching google in chrome', async()=>{
-    const browser = await chromium.launch({headless:false})
+    const browser = await chromium.launch()
     const page = await browser.newPage()
     await page.goto('https://www.google.com/')
     await expect(page).toHaveTitle('Google')

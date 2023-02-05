@@ -2,7 +2,7 @@ import {test, chromium} from '@playwright/test'
 
 test('enter login details test', async()=>{
     //launching the browser
-    const browser = await chromium.launch({headless:false, slowMo: 200})
+    const browser = await chromium.launch()
     //creating a page inside the browser
     const context = await browser.newContext({
         recordVideo:{
