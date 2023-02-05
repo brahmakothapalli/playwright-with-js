@@ -1,7 +1,7 @@
 const{test, firefox} = require('@playwright/test')
 
 test('checking state of the elements', async ()=>{
-    const browser = await firefox.launch({headless: false})
+    const browser = await firefox.launch({headless: true})
     const page = await browser.newPage()
 
     await page.goto('https://demoqa.com/automation-practice-form')
