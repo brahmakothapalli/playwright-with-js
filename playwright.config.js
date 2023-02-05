@@ -53,7 +53,8 @@ const config = {
         viewport: {width:1500, height:800},
         screenshot: 'off',
         video: 'off',
-        trace: 'off'
+        trace: 'off',
+        headless:true
       },
     },
 
