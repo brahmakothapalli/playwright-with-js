@@ -54,7 +54,7 @@ const config = {
         screenshot: 'off',
         video: 'off',
         trace: 'off',
-        headless:true
+        headless:false
       },
     },
 

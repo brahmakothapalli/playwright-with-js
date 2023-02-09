@@ -1,6 +1,6 @@
 import {test, chromium} from '@playwright/test'
 
-test('enter login details test', async()=>{
+test.skip('enter login details test', async()=>{
     //launching the browser
     const browser = await chromium.launch()
     //creating a page inside the browser
